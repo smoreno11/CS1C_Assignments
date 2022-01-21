@@ -1,20 +1,20 @@
-// DeckOfCards.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
+#include "header.h"
+#include "DeckOfCards.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	string deckArray[52] = { "C Ace", "C King", "C Queen", "Club Jester", "Club 10",
+								"Club 9", "Club 8", "Club 7", "Club 6", "Club 5", "Club 4", "Club 3",
+								"Club 2", "Diamond Ace", "Diamond King", "Diamond Queen", "Diamond Jester",
+								"Diamond 10", "Diamond 9", "Diamond 8", "Diamond 7", "Diamond 6", "Diamond 5",
+								"Diamond 4", "Diamond 3", "Diamond 2", "Hearts Ace", "Hearts King", "Hearts Queen",
+								"Hearts Jester", "Hearts 10", "Hearts 9", "Hearts 8", "Hearts 7", "Hearts 6", "Hearts 5",
+								"Hearts 4", "Hearts 3", "Hearts 2", "Spade Ace", "Spade King", "Spade Queen", "Spade Jester",
+								"Spade 10", "Spade 9", "Spade 8", "Spade 7", "Spade 6", "Spade 5", "Spade 4", "Spade 3", "Spade" };
+    
+    DeckOfCards shuffle;
+    //shuffle.initializeDeck(deckArray);
+	shuffle.print();
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

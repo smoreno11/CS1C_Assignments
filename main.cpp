@@ -1,26 +1,30 @@
+/******************************************************************************
+ * AUTHOR      : Saul Moreno
+ * ASSIGNMENT# : 1
+ * CLASS       : CS1C
+ * SECTION     : MW 7:30pm
+ ******************************************************************************/
+
 #include "header.h"
 #include "DeckOfCards.h"
 
 int main()
 {
-	string deckArray[52] = { "C Ace", "C King", "C Queen", "C Jester", "C 10",
-								"C 9", "C 8", "C 7", "C 6", "C 5", "C 4", "C 3",
-								"C 2", "D Ace", "D King", "D Queen", "D Jester",
-								"D 10", "D 9", "D 8", "D 7", "D 6", "D 5",
-								"D 4", "D 3", "D 2", "H Ace", "H King", "H Queen",
-								"H Jester", "H 10", "H 9", "H 8", "H 7", "H 6", "H 5",
-								"H 4", "H 3", "H 2", "S Ace", "S King", "S Queen", "S Jester",
-								"S 10", "S 9", "S 8", "S 7", "S 6", "S 5", "S 4", "S 3", "S 2" };
+	std::string deckArray[52] = { "CAce", "CKing", "CQueen", "CJester", "C10",
+								"C9", "C8", "C7", "C6", "C5", "C4", "C3",
+								"C2", "DAce", "DKing", "DQueen", "DJester",
+								"D10", "D9", "D8", "D7", "D6", "D5",
+								"D4", "D3", "D2", "HAce", "HKing", "HQueen",
+								"HJester", "H10", "H9", "H8", "H7", "H6", "H5",
+								"H4", "H3", "H2", "SAce", "SKing", "SQueen", "SJester",
+								"S10", "S9", "S8", "S7", "S6", "S5", "S4", "S3", "S2" };
     
     DeckOfCards shuffle;
 
-	for (int count = 0; count < 52; count++)
-		cout << deckArray[count] << " ";
-
     shuffle.initializeDeck(deckArray);
 	shuffle.perfectShuffle();
-	shuffle.print();
-
+	shuffle.print(deckArray);
+	shuffle.compareDecks(deckArray);
 
 
 }

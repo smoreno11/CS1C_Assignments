@@ -1,0 +1,14 @@
+
+This is the original deck:
+CAce CKing CQueen CJester C10 C9 C8 C7 C6 C5 C4 C3 C2 DAce DKing DQueen DJester D10 D9 D8 D7 D6 D5 D4 D3 D2
+HAce HKing HQueen HJester H10 H9 H8 H7 H6 H5 H4 H3 H2 SAce SKing SQueen SJester S10 S9 S8 S7 S6 S5 S4 S3 S2
+
+This is the deck after the perfect shuffle:
+CAce HAce CKing HKing CQueen HQueen CJester HJester C10 H10 C9 H9 C8 H8 C7 H7 C6 H6 C5 H5 C4 H4 C3 H3 C2 H2
+DAce SAce DKing SKing DQueen SQueen DJester SJester D10 S10 D9 S9 D8 S8 D7 S7 D6 S6 D5 S5 D4 S4 D3 S3 D2 S2
+
+This is the final deck:
+CAce CKing CQueen CJester C10 C9 C8 C7 C6 C5 C4 C3 C2 DAce DKing DQueen DJester D10 D9 D8 D7 D6 D5 D4 D3 D2
+HAce HKing HQueen HJester H10 H9 H8 H7 H6 H5 H4 H3 H2 SAce SKing SQueen SJester S10 S9 S8 S7 S6 S5 S4 S3 S2
+
+It took 8 perfect shuffles to restore back to the original deck.

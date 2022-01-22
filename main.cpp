@@ -3,18 +3,27 @@
 
 int main()
 {
-	string deckArray[52] = { "C Ace", "C King", "C Queen", "Club Jester", "Club 10",
-								"Club 9", "Club 8", "Club 7", "Club 6", "Club 5", "Club 4", "Club 3",
-								"Club 2", "Diamond Ace", "Diamond King", "Diamond Queen", "Diamond Jester",
-								"Diamond 10", "Diamond 9", "Diamond 8", "Diamond 7", "Diamond 6", "Diamond 5",
-								"Diamond 4", "Diamond 3", "Diamond 2", "Hearts Ace", "Hearts King", "Hearts Queen",
-								"Hearts Jester", "Hearts 10", "Hearts 9", "Hearts 8", "Hearts 7", "Hearts 6", "Hearts 5",
-								"Hearts 4", "Hearts 3", "Hearts 2", "Spade Ace", "Spade King", "Spade Queen", "Spade Jester",
-								"Spade 10", "Spade 9", "Spade 8", "Spade 7", "Spade 6", "Spade 5", "Spade 4", "Spade 3", "Spade" };
+	string deckArray[52] = { "C Ace", "C King", "C Queen", "C Jester", "C 10",
+								"C 9", "C 8", "C 7", "C 6", "C 5", "C 4", "C 3",
+								"C 2", "D Ace", "D King", "D Queen", "D Jester",
+								"D 10", "D 9", "D 8", "D 7", "D 6", "D 5",
+								"D 4", "D 3", "D 2", "H Ace", "H King", "H Queen",
+								"H Jester", "H 10", "H 9", "H 8", "H 7", "H 6", "H 5",
+								"H 4", "H 3", "H 2", "S Ace", "S King", "S Queen", "S Jester",
+								"S 10", "S 9", "S 8", "S 7", "S 6", "S 5", "S 4", "S 3", "S 2" };
     
     DeckOfCards shuffle;
-    //shuffle.initializeDeck(deckArray);
+
+	for (int count = 0; count < 52; count++)
+		cout << deckArray[count] << " ";
+
+    shuffle.initializeDeck(deckArray);
+	shuffle.perfectShuffle();
 	shuffle.print();
+
+
+
 }
+
 
 
